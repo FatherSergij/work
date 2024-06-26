@@ -6,11 +6,10 @@ pipeline {
 
     stages {       
 
-         stage('Logging into AWS ECR') {
+        stage('Logging into AWS ECR') {
             steps {
-		script {
-			echo "gg"
-		}
+		echo "gg"
             }
         }  
+    }
 }
