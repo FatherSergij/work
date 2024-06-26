@@ -8,7 +8,7 @@ pipeline {
 
         stage('Logging into AWS ECR') {
             steps {
-		echo "gg"
+		echo "gg123"
             }
         }  
     }
