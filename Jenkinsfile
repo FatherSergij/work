@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    def ts = new test
+                    def ts = new test()
                     def result = test.summ(2, 4)
                     println result
                 }
