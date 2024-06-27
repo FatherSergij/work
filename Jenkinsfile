@@ -1,6 +1,6 @@
 @Library('lib-test') _
 
-import com.example.Test
+import test.Test
 
 pipeline {
     options {
