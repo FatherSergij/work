@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     def ts = new test()
-                    def result = test.summ(2, 4)
+                    def result = test.summ(2, 5)
                     println result
                 }
 		echo "wwwwgg123"
