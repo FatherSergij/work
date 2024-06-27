@@ -1,6 +1,6 @@
 @Library('lib-test') _
 
-import com.example.test
+import com.example.Test
 
 pipeline {
     options {
@@ -13,8 +13,8 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    def ts = new test()
-                    def result = test.summ(2, 5)
+                    def ts = new Test()
+                    def result = ts.summ(2, 5)
                     println result
                 }
 		echo "wwwwgg123"
