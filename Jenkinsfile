@@ -1,3 +1,7 @@
+@Library('lib-test') _
+
+import com.example.test
+
 pipeline {
     options {
         buildDiscarder(logRotator(numToKeepStr: "5"))
@@ -6,8 +10,13 @@ pipeline {
 
     stages {       
 
-        stage('Logging into AWS ECR') {
+        stage('Test') {
             steps {
+                script {
+                    def ts = new test
+                    def result = test.summ(2, 4)
+                    println result
+                }
 		echo "wwwwgg123"
             }
         }  
