@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     def ts = new Test()
-                    def result = ts.start("+", 2, 5)
+                    def result = ts.start("-", 2, 5)
                     println result
                 }
 		echo "wwwwgg123"
