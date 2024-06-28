@@ -1,4 +1,4 @@
-@Library('lib-test') _
+@Library('lib-test@v1.0') _
 
 import example.Test
 
@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     def ts = new Test()
-                    def result = ts.summ(2, 5)
+                    def result = ts.start("+", 2, 5)
                     println result
                 }
 		echo "wwwwgg123"
